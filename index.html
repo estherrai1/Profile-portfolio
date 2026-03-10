@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="nav-bar">
+            <h1 class="title">Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    <nav class="mobile-menu" id="mobile-menu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#about" class="mobile-link">Skills</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+    </header>
+
+<!-----------hero-section----->
+<section id="home">
+    <div class="section-pic">
+        <img src="image.png" alt="profile">
+    </div>
+    <div class="hero-content">
+            <p class="section-text-p1">Hi, I'm</p>
+            <h1 class="section-title">Esther</h1>
+            <p class="section-text-p2">Developer — Learner.<br>Building web experiences.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">↓ Download Resume</a>
+                <a href="#contact" class="btn btn-outline">Contact Me →</a>
+            </div>
+    </div>
+
+</section>
+<div class="divider"></div>
+<!----about&skill----------------->
+<section id="about">
+    <h2 class="section-titles" >About & Skills</h2>
+        <div class="about-container">
+            <div class="about-left">
+                <h3 class="section-skill">About</h3>
+                    <p class="about-bio">~ Hi,<strong>Esther</strong>-I am a CSIT student who is currently learning web development and building my foundation in programming. I have experience working with HTML and CSS to create and style web pages, and I also know some JavaScript to 
+                        add basic interactivity to websites. As I continue studying, I am improving my skills by practicing and building projects, which helps me better
+                        understand how modern websites are designed and developed. My goal is to keep learning new technologies and strengthen my abilities so I 
+                        can become a skilled web developer in the future. </p>
+                    </div>
+                    <div class="skill-right">
+                        <h3 class="section-skill">Skills</h3>
+                        <p class="about-bio">~ Currently, I have a foundation in web development, with hands-on experience in HTML, CSS, and JavaScript.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+<div class="divider"></div>
+
+<!-------project------------->
+<section id="projects">
+  <h2 class="section-titles">Projects</h2>
+  <div class="projects-grid">
+    <article class="project-card">
+      <h3 class="project-title">Color Flipper</h3>
+      <p class="about-bio">A simple interactive web application that changes the background color based on user input. The interface includes predefined color buttons (blue, red, and green) as well as a “Random Color” feature that generates dynamic RGB values. The random color is created using JavaScript by generating numbers between 0 and 255 for red, green, and blue, then converting
+         them into an RGB color format. This project demonstrates fundamental DOM manipulation, event handling, and basic JavaScript logic.</p>
+    </article>
+    <article class="project-card">
+      <h3 class="project-title">Palindrome Checker</h3>
+      <p class="about-bio">A simple web application that checks if a given string is a palindrome. The interface allows users to input a word or phrase and displays whether it is a palindrome or not. The application uses JavaScript to reverse the input string and compare it with the original, demonstrating basic string manipulation and DOM interaction.</p>
+    </article>
+    <article class="project-card">
+      <h3 class="project-title">Simple Detail Box</h3>
+      <p class="about-bio">A simple interactive web form that collects user information such as name, email, gender, and hobbies. The form includes basic client-side validation using JavaScript to ensure required fields are not left empty. If a user attempts to submit incomplete information,
+         warning alerts are displayed to guide them. This project demonstrates fundamental form handling, input validation, and DOM interaction using JavaScript.</p>
+    </article>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!--------------contact----------------->
+<section id="contact">
+    <h2 class="section-titles">Contact</h2>
+      <div class="contact-info">
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener">
+            <span class="social-icon">GH</span>
+            github.com/Esther rai
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">
+            <span class="social-icon">in</span>
+            linkedin.com/in/Esther rai
+          </a>
+      </div>
+
+      <form class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text"  name="name" placeholder="Enter your name.." />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="yourname@example.com" />
+          </div>
+        </div>
+            <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="place your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message →</button>
+      </form>
+    </div>
+  </section>
+
+  <!----------footer---------------->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2026 Esther. Crafted with care.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
